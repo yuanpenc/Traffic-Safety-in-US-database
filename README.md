@@ -35,10 +35,10 @@ Entities are represented by rectangle. The properties of each entity contain mor
 
 Based on the principle of designing E-R diagram, the E-R Diagram of our database is shown in Figure 1. 
 <p align="center">
-  <img src="./img/pr11/Bathing.gif" width="400">
+  <img src="./pic/er.png" width="400">
 </p>
 <p align="center">
-  (https://giphy.com/gifs/disney-cuddling-CqGm2DE1eX5iE)
+  Figure 1: E-R Diagram of database
 </p>
 
 In Figure 1, three entities which are called “Accident”, “Vehicle and” and “Person” represented by rectangle. Several vehicles might be involved in an accident and several accidents must involve many vehicles so the arrow should point to the Accident entity. Several persons might take in a vehicle and many vehicles must involve in many persons so the arrow should point to the vehicle. An accident might be involved in many persons and one person must be involved in an accident so the arrow should point to the Accident entity. Attributes of each entity are represented by ovals, which are the same as attributes in each dataset. 
