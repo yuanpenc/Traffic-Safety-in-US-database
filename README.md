@@ -46,16 +46,41 @@ In Figure 1, three entities which are called “Accident”, “Vehicle and” a
 ## Factors on Fatalities in Car Crashes
 ### Relationship of Speed and Fatalities
 We use linear regression, find the best fitting parameter vector w ̂=[α,β].  First, we clean all data and build a table named vehicle, totally 13602 rows of data. Then, we build a relationship of vehicles ‘highest speed(mph) and the number of deaths in the accident.
-                                                                
+
+<p align="center">
+  <img src="./pic/Screen Shot 2020-02-20 at 4.03.11 PM.png" width="200">
+</p> 
+
 Where y_i is sample data of death in one accident, x_i is speed data, n_i is noise, α and  β are linear regression function parameters.
 * Outliers Detection By using the formula below, we can get all the outliers we should remove.
-                      
+ 
+ <p align="center">
+  <img src="./pic/Screen Shot 2020-02-20 at 4.03.39 PM.png" width="240">
+</p> 
+   
+   
 Where y_i is sample data of death in each accident, u is mean of deaths and σ is the sample of all death data. 
 Totally, we locate 107 outliers by repeat the process above several times.   
 
 * Linear Function After removing the outliers, we have 13495 rows of data. In this case, we set up the number of deaths as respond and speed as prediction. After applying linear regression, we calculate the relate parameter.
 
+<p align="center">
+  <img src="./pic/Screen Shot 2020-02-20 at 4.03.54 PM.png" width="200">
+</p> 
+
 Then we can identify the model.
+
+<p align="center">
+  <img src="./pic/Screen Shot 2020-02-20 at 4.04.10 PM.png" width="300">
+</p> 
+
+<p align="center">
+  <img src="./pic/Picture2.png" width="400">
+</p>
+<p align="center">
+  Figure 2:  Linear regression function between Death and Speed
+</p>
+
 
 The parameter α ̂ is positive, which means the death in the accident will increase along with the increment of the speed of vehicles and vice versa. We can use this identified model to make some prediction.  When the speed goes up to 151mph, the average number of deaths would get to 1.59. 
 
@@ -63,6 +88,13 @@ The parameter α ̂ is positive, which means the death in the accident will incr
 
 Age is the human’s unchangeable attribute. With the time goes by, age will increase. However, when the age increases, people’s physical abilities will decrease, especially the ability to response and the ability to judgement. As we all know, driving need the drivers concentrate on the road carefully. In case some accident happens, the driver needs to make a quick reflection as soon as possible. Therefore, our group argue that the fatalities have some relationships with the age of the driver. To figure out what the relationship is, we make a bar chart to deal with the problem.
 We collect the data from the database and select the column called AGE. We find out that there are some 998 and 999 in the data. Looking for the codebook, they are not the data we need. Therefore, we clean the data and remove the error number. We separate the ages spaced at 10. Then, we count the total number of each age range to represent the number of accidents at different age ranges. After that, we use the excel to make the bar chart and create the trendline. As the graphic shown below:
+
+<p align="center">
+  <img src="./pic/Picture3.png" width="400">
+</p>
+<p align="center">
+  Figure 3: The Age of Drivers impact of Fatalities
+</p>
 
 From the graphic above, we can know that the trendline is the fourth power line. The age ranges from 20 to 30 has the largest number of the fatalities, which is the maximum. In our opinion, the reason why this happen is that at this age range, most of them are young people, they are easier to get angry and lose temper. Also, we find that the legal driving age in most states are 16. So, when most of the twenties own a car for the first time in their lives, and the excitement makes them ignore the safety of transportation. That is why the age in twenties has the large number of fatalities. When people go in their 30s, 40s and 50s, you can see the number decreases step by step. We think this is because people at these periods have a stable job, they are unavoidable to use vehicle. Although there are many accidents happening in the whole country, the rate of accident happening per person is stable. So, the numbers of these three ranges look the same. And the age below 20s and above 60s, the number is lower. That is because they don’t always depend on vehicles. To sum up, the conclusion is that the age ranges from 20 to 50 have the largest number of fatalities.
 
